@@ -1,0 +1,34 @@
+/* src/components/Sorting.css */
+
+.sorting-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .sorting-label {
+    font-weight: bold;
+    width: 40%;
+    color: #333; /* Darker color for label */
+  }
+  
+  .sorting-select {
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    background-color: #fff;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .sorting-select:focus {
+    border-color: #b37e56; /* Color when focused */
+  }
+  
+  .sorting-select option {
+    padding: 10px;
+  }
+  

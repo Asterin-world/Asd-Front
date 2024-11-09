@@ -1,0 +1,177 @@
+/* src/components/Filters.css */
+
+.filters {
+  background-color: transparent;
+  /* padding: 0 15px; */
+}
+
+.filters h5 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.btn-clear-all {
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+  color: #b37e56;
+  cursor: pointer;
+}
+
+.btn-clear-all:hover {
+  text-decoration: underline;
+}
+
+.filter-group {
+  padding: 15px 0;
+}
+
+.filter-header {
+  width: 100%;
+  font-weight: bold;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 10px 0;
+  cursor: pointer;
+  color: #333;
+}
+
+.filter-header:hover {
+  color: #b37e56;
+}
+
+.filters .form-check-input:checked {
+  background-color: black !important;
+  border-color: black !important;
+}
+
+.filter-tag {
+  background-color: #e8e8e8;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-right: 5px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.filter-tag:hover {
+  background-color: #d6d6d6;
+  cursor: pointer;
+}
+
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.form-range {
+  margin-top: 10px;
+}
+
+.filter-arrow {
+  float: right;
+}
+
+.filter-arrow.rotate {
+  transform: rotate(180deg);
+}
+
+.pagination-wrapper {
+  margin-top: 20px;
+}
+
+.pagination-wrapper .page-item .page-link {
+  background-color: transparent;
+  color: #000;
+}
+
+.pagination-wrapper .page-item.active .page-link,
+.pagination-wrapper .page-item .page-link:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Dual Range Slider Container */
+/* Dual Range Slider Container */
+.dual-range-slider-container {
+  position: relative;
+  height: 6px;
+  background: #ddd;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0;
+}
+
+.slider-track {
+  position: absolute;
+  height: 6px;
+  background: #ddd;
+  width: 100%;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.slider {
+  -webkit-appearance: none; /* Remove default appearance */
+  appearance: none;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background: transparent;
+  margin: 0;
+}
+
+/* Customize the slider thumb for WebKit browsers (Chrome, Safari, iOS) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background: black; /* Set thumb color to black */
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+/* Customize the slider thumb for Mozilla Firefox */
+.slider::-moz-range-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background: black; /* Set thumb color to black */
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+/* Customize the slider thumb for Microsoft Edge and IE */
+.slider::-ms-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background: black; /* Set thumb color to black */
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+/* Darker color on hover */
+.slider::-webkit-slider-thumb:hover,
+.slider::-moz-range-thumb:hover,
+.slider::-ms-thumb:hover {
+  background: #333; /* Set a darker shade for hover */
+}
+
+/* Selected range background color */
+.slider-range {
+  position: absolute;
+  height: 6px;
+  background: black; /* Set selected range color */
+  z-index: 1;
+  border-radius: 5px;
+}
